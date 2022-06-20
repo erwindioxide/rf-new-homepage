@@ -1,0 +1,127 @@
+@font-face {
+    font-family: "Gill Sans";
+    src: url("./fonts/Gill-Sans.woff");
+}
+
+@font-face {
+    font-family: "Gill Sans Bold";
+    src: url('./fonts/Gill-Sans-Bold.woff');
+}
+
+
+html,
+body {
+    padding: 0 !important;
+    margin: 0 !important;
+    width: 100% !important;
+    box-sizing: border-box;
+}
+
+.gs {
+    font-family: 'Gill Sans';
+}
+
+.gsBold {
+    font-family:'Gill Sans Bold'
+
+}
+.navbar {
+    background: #124735;
+    align-content: center;
+}
+
+.navbar-brand p {
+    color: #ffffff;
+}
+
+.navbar-brand img {
+    width: 110px;
+}
+
+.navbar-nav ul li a {
+    color: #ffffff;
+    font-size: 200%;
+    opacity: 100%;
+    font-family: 'Gill Sans';
+
+}
+
+.jumbotron-lg {
+    height: 85vh;
+    background-image: url("./img/investing-md.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    box-sizing: border-box;
+    border-radius: 0px;
+    margin-bottom: 0;
+}
+
+.jumbotron-md {
+    height: 85vh;
+    background-image: url("./img/investing.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    box-sizing: border-box;
+    border-radius: 0px;
+    margin-bottom: 0;
+    
+}
+
+.btn-big-lg {
+    font-size: 250%;
+    padding-top: 10;
+    padding-bottom: 10;
+    padding-left: 20;
+    padding-right: 20;
+}
+
+.banner-text {
+    margin-top: 3.5rem;
+    color: #256141;
+    text-shadow: 1.5 !important;
+}
+
+.video-container {
+    position: relative;
+    padding-bottom: 56.25%;
+  }
+
+.video-container iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+  }
+
+
+.btns .rf-btn {
+    background-color: #124735;
+    color: #ffffff;
+    text-shadow: 0.5;
+    border: #ffffff;
+}
+
+.btns .img-btn {
+    background-color: #1A237E;
+    color: #fff;
+}
+
+.header-section h3 {
+    color: #124735;
+}
+
+.intro {
+    background-color: #256141;
+    padding-top: 3rem;
+    padding-bottom: 3rem;
+    padding-right: 3rem;
+    padding-left: 3rem;
+    margin-left: 0px;
+    width: 100% !important;
+}
+
+
+
+
+/*# sourceMappingURL=style.css.map */
