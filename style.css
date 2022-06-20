@@ -75,8 +75,17 @@ body {
     padding-right: 20;
 }
 
+
+.btn-md {
+    font-size: 175%;
+    padding-top: 10;
+    padding-bottom: 10;
+    padding-left: 20;
+    padding-right: 20;
+}
+
+
 .banner-text {
-    margin-top: 3.5rem;
     color: #256141;
     text-shadow: 1.5 !important;
 }
