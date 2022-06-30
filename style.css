@@ -120,6 +120,18 @@ body {
     color: #124735;
 }
 
+.text-rampver   {
+    color: #256141;
+}
+
+.bg-rampver   {
+    background-color: #256141;
+}
+
+.text-gold {
+    color: #cc942c;
+}
+
 .intro {
     background-color: #256141;
     padding-top: 3rem;
@@ -130,7 +142,14 @@ body {
     width: 100% !important;
 }
 
+.icons-carousel {
+    width: 100px;
+}
 
+.carousel-control-prev-icon, .carousel-control-next-icon, .indicator {
+    background-color: #256141 !important;
+    color: #256141 !important;
+}
 
 
 /*# sourceMappingURL=style.css.map */
