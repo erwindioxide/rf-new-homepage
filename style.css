@@ -146,9 +146,17 @@ body {
     width: 100px;
 }
 
+.logo-carousel {
+    width: 300px;
+}
+
 .carousel-control-prev-icon, .carousel-control-next-icon, .indicator {
     background-color: #256141 !important;
     color: #256141 !important;
+}
+
+.icon-carousel-section, .logo-carousel-section  {
+    height: 65vh;
 }
 
 
