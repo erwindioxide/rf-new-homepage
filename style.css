@@ -20,14 +20,15 @@ body {
     font-family: 'Gill Sans';
 }
 
-.font-rf-green{
+.font-rf-green {
     font-family: 'Gill Sans';
 }
 
 .gsBold {
-    font-family:'Gill Sans Bold'
+    font-family: 'Gill Sans Bold'
 
 }
+
 .navbar {
     background: #256141;
     align-content: center;
@@ -119,11 +120,11 @@ body {
     color: #124735;
 }
 
-.text-rampver   {
+.text-rampver {
     color: #256141;
 }
 
-.bg-rampver   {
+.bg-rampver {
     background-color: #256141;
 }
 
@@ -131,7 +132,8 @@ body {
     color: #cc942c;
 }
 
-.intro, .faqs {
+.intro,
+.faqs {
     background-color: #256141;
     padding-top: 3rem;
     /* padding-bottom: 1rem; */
@@ -163,15 +165,17 @@ body {
     width: 110px;
 }
 
-.learning-tools-icons{
+.learning-tools-icons {
     width: 80px;
 }
 
-.faq-icons{
+.faq-icons {
     width: 40px;
 }
 
-.carousel-control-prev-icon, .carousel-control-next-icon, .indicator {
+.carousel-control-prev-icon,
+.carousel-control-next-icon,
+.indicator {
     background-color: #256141 !important;
     color: #256141 !important;
     margin: 0rem 0 0 0 !important;
@@ -187,6 +191,14 @@ body {
 
 .testimonial {
     width: 200px;
+}
+
+.reg-logos-icon {
+    width: 200px;
+}
+
+.bottombar {
+    background-color: #256141;
 }
 
 /* .icon-carousel-section, .logo-carousel-section  {
