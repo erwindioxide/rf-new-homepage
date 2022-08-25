@@ -173,6 +173,14 @@ body {
     width: 40px;
 }
 
+
+@media (min-width: 992px){
+    .why-rampver {
+        margin-left: 5rem;
+        margin-right: 5rem;
+    }
+}
+
 .carousel-control-prev-icon,
 .carousel-control-next-icon,
 .indicator {
@@ -193,6 +201,13 @@ body {
     width: 200px;
 }
 
+.down-icon{
+    padding-top: 0.5rem;
+    width: 25px;
+    position: absolute;
+    right: 15px;
+}
+
 .reg-logos-icon {
     width: 200px;
 }
@@ -200,6 +215,11 @@ body {
 .bottombar {
     background-color: #124735;
 }
+
+/* .footer-text{
+    background-color: #124735;
+    color: white;
+} */
 
 /* .icon-carousel-section, .logo-carousel-section  {
     height: 100vh;
