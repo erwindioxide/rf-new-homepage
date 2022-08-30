@@ -157,8 +157,14 @@ body {
     width: 75px;
 }
 
-.logo-carousel {
-    width: 200px;
+/* .logo-carousel-section {
+    height: 75vh;
+} */
+
+.white-button {
+    border-style: solid;
+    border-color: #cc942c;
+    border-width: 2px;
 }
 
 .why-rf-icons {
@@ -179,7 +185,13 @@ body {
         margin-left: 5rem;
         margin-right: 5rem;
     }
+
 }
+
+.logo-carousel {
+    width: 200px;
+}
+
 
 .carousel-control-prev-icon,
 .carousel-control-next-icon,
@@ -209,7 +221,7 @@ body {
 }
 
 .reg-logos-icon {
-    width: 200px;
+    width: 175px;
 }
 
 .bottombar {
