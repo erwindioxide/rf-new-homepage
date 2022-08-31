@@ -16,6 +16,7 @@ body {
     box-sizing: border-box;
 }
 
+
 .gs {
     font-family: 'Gill Sans';
 }
@@ -51,7 +52,7 @@ body {
 
 .jumbotron-lg {
     height: 85vh;
-    background-image: url("./img/investing-md.jpg");
+    background-image: url("./img/new cover md.png");
     background-size: cover;
     background-repeat: no-repeat;
     box-sizing: border-box;
@@ -61,7 +62,7 @@ body {
 
 .jumbotron-md {
     height: 85vh;
-    background-image: url("./img/investing.jpg");
+    background-image: url("./img/new cover.png");
     background-size: cover;
     background-repeat: no-repeat;
     box-sizing: border-box;
@@ -180,7 +181,7 @@ body {
 }
 
 
-@media (min-width: 992px){
+@media (min-width: 992px) {
     .why-rampver {
         margin-left: 5rem;
         margin-right: 5rem;
@@ -188,10 +189,17 @@ body {
 
 }
 
+.logo-carousel-small {
+    width: 130px;
+}
+
 .logo-carousel {
     width: 200px;
 }
 
+/* .lcs {
+    height: 80vh;
+} */
 
 .carousel-control-prev-icon,
 .carousel-control-next-icon,
@@ -213,7 +221,7 @@ body {
     width: 200px;
 }
 
-.down-icon{
+.down-icon {
     padding-top: 0.5rem;
     width: 25px;
     position: absolute;
@@ -236,6 +244,5 @@ body {
 /* .icon-carousel-section, .logo-carousel-section  {
     height: 100vh;
 } */
-
 
 /*# sourceMappingURL=style.css.map */
