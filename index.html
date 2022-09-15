@@ -31,31 +31,29 @@
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
                 <ul class="navbar-nav ml-auto order-2">
                     <li class="nav-item mt-1 mr-2">
-                        <h5><a 
-                            href="https://rampver.com/about-us/rampver-mission-and-vision/"
-                            class="nav-link gs font-white" style="color: #ffffff;" href="#">Who We Are</a></h5>
+                        <h5><a href="https://rampver.com/about-us/rampver-mission-and-vision/"
+                                class="nav-link gs font-white" style="color: #ffffff;" href="#">Who We Are</a></h5>
                     </li>
                     <li class="nav-item mt-1 mr-2">
-                        <h5><a 
-                            href="https://rampver.com/get-started/"
-                            class="nav-link gs font-white" style="color: #ffffff;" href="#">What We Offer</a>
+                        <h5><a href="https://rampver.com/get-started/" class="nav-link gs font-white"
+                                style="color: #ffffff;" href="#">What We Offer</a>
                         </h5>
                     </li>
                     <li class="nav-item mt-1 mr-2">
-                        <h5><a href="#learning-center" class="nav-link gs font-white" style="color: #ffffff;" href="#">Learning Center</a>
+                        <h5><a href="#learning-center" class="nav-link gs font-white" style="color: #ffffff;"
+                                href="#">Learning Center</a>
                         </h5>
                     </li>
                     <li class="nav-item mt-1 mr-2">
                         <h5><a class="nav-link gs font-white" style="color: #ffffff;" href="#">Support</a></h5>
                     </li>
                     <li class="nav-item mt-1 mr-4">
-                        <h5><a 
-                            href="https://rampver.com/contact-us/"
-                            class="nav-link gs font-white" style="color: #ffffff;" href="#">Contact Us</a></h5>
+                        <h5><a href="https://rampver.com/contact-us/" class="nav-link gs font-white"
+                                style="color: #ffffff;" href="#">Contact Us</a></h5>
                     </li>
                     <li class="nav-item mt-1">
                         <h6><a class="nav-link gsBold font-white btn shadow"
-                            href="https://invest.rampver.com/inquire/campaign.html?id=new-homepage"
+                                href="https://invest.rampver.com/inquire/campaign.html?id=new-homepage"
                                 style="background-color:#cc942c; color: #ffffff;">Inquire Now!</a></h5>
                     </li>
                 </ul>
@@ -65,26 +63,26 @@
 
     <!-- start of banner -->
     <div class="hero">
-        <div class="jumbotron-lg d-md-none">
+        <div class="jumbotron-md d-md-none" id="jumbotron-md">
 
             <div class="banner-text align-center">
                 <br>
                 <br>
                 <br>
                 <br>
-                <h1 class="text-center font-weight-bold gsBold mx-2" style="font-size: 275%;">We can help make your
-                    financial dreams a
-                    reality.
+                <h1 class="text-center font-weight-bold gsBold mx-2" style="font-size: 400%;">Let us be your partner in
+                    wealth creation.
                 </h1>
                 <br>
                 <div class="text-center mt-2">
                     <br>
                     <a href="" class="btn btn-lg font-weight-bold gsBold shadow"
-                        style="background-color:#124735; color: #ffffff;" href="https://invest.rampver.com/inquire/campaign.html?id=new-homepage">Inquire now!</a>
+                        style="background-color:#124735; color: #ffffff;"
+                        href="https://invest.rampver.com/inquire/campaign.html?id=new-homepage">Inquire now!</a>
                 </div>
             </div>
         </div>
-        <div class="jumbotron-md d-none d-sm-block">
+        <div class="jumbotron-lg d-none d-sm-block" id="jumbotron-lg">
             <div class="row m-0">
                 <div class="col-lg-7"></div>
                 <!-- <div class="col-lg-4"></div> -->
@@ -92,12 +90,12 @@
                     <div class="banner-text">
                         <br><br><br><br>
                         <h1 class="text-center font-weight-bold align-items-center mx-1 mt-4 gsBold"
-                            style="font-size: 380%;">We can
-                            help make your financial dreams a reality.</h1>
+                            style="font-size: 400%;">Let us be your partner in wealth creation.</h1>
                         <div class="text-center mt-2">
                             <br>
                             <a href="" class="btn btn-big-lg font-weight-bold gsBold shadow"
-                                style="background-color:#124735; color: #ffffff;" href="https://invest.rampver.com/inquire/campaign.html?id=new-homepage">Inquire now!</a>
+                                style="background-color:#124735; color: #ffffff;"
+                                href="https://invest.rampver.com/inquire/campaign.html?id=new-homepage">Inquire now!</a>
                         </div>
                     </div>
                 </div>
@@ -106,6 +104,24 @@
     </div>
 
     <!-- end of banner -->
+
+    <!-- time change -->
+    <script>
+        var currentTime = new Date().getHours();
+        console.log(currentTime)
+        if (0 <= currentTime && currentTime < 8) {
+            document.getElementById('jumbotron-md').style.backgroundImage = "url('./img/covers/cover-md.png')";
+            document.getElementById('jumbotron-lg').style.backgroundImage = "url('./img/covers/cover.png')";
+        } else if (8 <= currentTime && currentTime < 16) {
+            document.getElementById('jumbotron-md').style.backgroundImage = "url('./img/covers/cover-2-md.png')";
+            document. getElementById('jumbotron-lg').style.backgroundImage = "url('./img/covers/cover-2.png')";
+        } 
+        else {
+            document.getElementById('jumbotron-md').style.backgroundImage = "url('./img/covers/cover-3-md.png')";
+            document. getElementById('jumbotron-lg').style.backgroundImage = "url('./img/covers/cover-3.png')";
+        }
+        </script>
+    <!-- time change -->
 
     <!-- start of vid section -->
     <div class="intro">
@@ -153,6 +169,8 @@
             <br>
     </div>
     <!-- end of vid section -->
+
+
 
     <!-- start of icon carousel-lg -->
     <div class="icon-carousel-section pb-3">
@@ -781,7 +799,8 @@
                 </div>
                 <div class="col text-center mx-3 mb-2">
                     <a href="https://www.linkedin.com/company/rampver-financials" target="_blank">
-                        <img src="./img/learning-tools/linkedin.png" class="text-center learning-tools-icons text-center">
+                        <img src="./img/learning-tools/linkedin.png"
+                            class="text-center learning-tools-icons text-center">
                         <br>
                         <p class="lead gsBold text-center text-gold">LinkedIn</p>
                     </a>
@@ -1014,8 +1033,10 @@
                 </div>
                 <div class="col-lg-6 col-md-6 col-sm-6 col-xs-6 footer-text">
                     <h5 class="gsBold text-rampver text-center mb-0">
-                        <a href="https://rampver.com/terms-and-conditions/" target="_blank" class="text-rampver">Terms and Conditions</a> |
-                        <a href="https://rampver.com/privacy" target="_blank" class="text-rampver">Data Privacy Policy</a>
+                        <a href="https://rampver.com/terms-and-conditions/" target="_blank" class="text-rampver">Terms
+                            and Conditions</a> |
+                        <a href="https://rampver.com/privacy" target="_blank" class="text-rampver">Data Privacy
+                            Policy</a>
                     </h5>
                     <p class="text-rampver text-center mb-0">8F PDCP Bank Centre,</p>
                     <p class="text-rampver text-center mb-0">V.A Rufino cor. L.P. Leviste Sts.,</p>
@@ -1070,4 +1091,5 @@
         </script>
 
 </body>
+
 </html>

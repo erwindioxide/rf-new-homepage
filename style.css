@@ -52,7 +52,7 @@ body {
 
 .jumbotron-lg {
     height: 85vh;
-    background-image: url("./img/new cover md.png");
+    /* background-image: url("./img/new cover md.png"); */
     background-size: cover;
     background-repeat: no-repeat;
     box-sizing: border-box;
@@ -62,7 +62,7 @@ body {
 
 .jumbotron-md {
     height: 85vh;
-    background-image: url("./img/new cover.png");
+    /* background-image: url("./img/new cover.png"); */
     background-size: cover;
     background-repeat: no-repeat;
     box-sizing: border-box;
