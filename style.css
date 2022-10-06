@@ -31,7 +31,7 @@ body {
 }
 
 .navbar {
-    background: #124735;
+    background: linear-gradient(to right, #124735, #256141);
     align-content: center;
 }
 
@@ -126,7 +126,7 @@ body {
 }
 
 .bg-rampver {
-    background-color: #124735;
+    background:#124735;
 }
 
 .text-gold {
@@ -135,7 +135,7 @@ body {
 
 .intro,
 .faqs {
-    background-color: #124735;
+    background: linear-gradient(to right, #124735, #256141);
     padding-top: 3rem;
     /* padding-bottom: 1rem; */
     padding-right: 2rem;
@@ -145,7 +145,7 @@ body {
 }
 
 .learning-tools {
-    background-color: #124735;
+    background: linear-gradient(to right, #124735, #256141);
     padding-bottom: 2rem;
     padding-right: 2rem;
     padding-top: 1rem;
