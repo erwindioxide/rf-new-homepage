@@ -190,12 +190,6 @@ body {
 
 }
 
-@media screen and (max-width: 600px) {
-    .learning-tools-icons {
-        width: 60px;
-    }
-  }
-
 .logo-carousel-small {
     width: 130px;
 }
