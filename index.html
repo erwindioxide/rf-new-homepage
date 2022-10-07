@@ -110,14 +110,14 @@
         var currentTime = new Date().getHours();
         console.log(currentTime)
         if (0 <= currentTime && currentTime < 8) {
-            document.getElementById('jumbotron-md').style.backgroundImage = "url('./img/covers/cover-md.png')";
-            document.getElementById('jumbotron-lg').style.backgroundImage = "url('./img/covers/cover.png')";
-        } else if (8 <= currentTime && currentTime < 16) {
-            document.getElementById('jumbotron-md').style.backgroundImage = "url('./img/covers/cover-2-md.png')";
-            document.getElementById('jumbotron-lg').style.backgroundImage = "url('./img/covers/cover-2.png')";
-        } else {
             document.getElementById('jumbotron-md').style.backgroundImage = "url('./img/covers/cover-3-md.png')";
             document.getElementById('jumbotron-lg').style.backgroundImage = "url('./img/covers/cover-3.png')";
+        } else if (8 <= currentTime && currentTime < 16) {
+            document.getElementById('jumbotron-md').style.backgroundImage = "url('./img/covers/cover-md.png')";
+            document.getElementById('jumbotron-lg').style.backgroundImage = "url('./img/covers/cover.png')";
+        } else {
+            document.getElementById('jumbotron-md').style.backgroundImage = "url('./img/covers/cover-2-md.png')";
+            document.getElementById('jumbotron-lg').style.backgroundImage = "url('./img/covers/cover-2.png')";
         }
     </script>
     <!-- time change -->
@@ -308,7 +308,7 @@
                 <!-- Healthcare -->
 
                 <!-- Protection -->
-                <div class="carousel-item">
+                <div class="carousel-item ">
                     <div class="text-center">
                         <h1 class="pt-3 pb-3 mb-2">
                             <a href="" class="btn btn-lg bg-rampver text-white gsBold">PROTECTION</a>
@@ -316,30 +316,31 @@
                         <br>
                     </div>
                     <div class="row px-4 mx-4 py-4">
-                        <div class="col-lg-6 col-md-6 col-sm-6 col-xs-6 text-center">
+                        <div class="col-lg-4 col-md-4 col-sm-6 col-xs-6 text-center mb-3">
                             <div>
                                 <img src="./img/homepage-icons/life-insurance.png" class="icons-carousel text-center"
                                     alt="mutual funds"><br>
-                                <a href="" class="btn btn-lg gsBold text-white mt-3 mb-2 text-center"
-                                    style="background-color: #124735;">Life Insurance</a>
+                                <a href="" class="btn gsBold text-white mt-3 pb-2 text-center"
+                                    style="background-color: #124735 ;">Life Insurance</a>
                                 <br>
                             </div>
                         </div>
-                        <div class="col-lg-6 col-md-6 col-sm-6 col-xs-6 text-center">
+                        <div class="col-lg-4 col-md-4 col-sm-6 col-xs-6 pb-2 text-center">
                             <div>
                                 <img src="./img/homepage-icons/non-life.png" class="icons-carousel text-center"
-                                    alt="mutual funds"><br>
-                                <a href="" class="btn btn-lg gsBold text-white mt-3 mb-2 text-center"
+                                    alt=""><br>
+                                <a href="" class="btn gsBold text-white mt-3 mb-2 text-center"
                                     style="background-color: #124735 ;">Non-life Insurance</a>
-                                <!-- <div class="text-center d-none d-lg-block">
-                                    <p class="text-rampver mb-0">
-                                        <a href="" class="text-rampver gsBold">Motor Car</a> |
-                                        <a href="" class="text-rampver gsBold">OFW Insurance</a> |
-                                        <a href="" class="text-rampver gsBold">Fire</a></p>
-                                    <p class="text-rampver mt-0">
-                                        <a href="" class="text-rampver gsBold">Travel</a> |
-                                        <a href="" class="text-rampver gsBold">Personal Accident</a></p>
-                                </div> -->
+                                <br>
+                            </div>
+                        </div>
+                        <div class="col-lg-4 col-md-4 col-sm-6 col-xs-6 pb-2 text-center">
+                            <div>
+                                <img src="./img/homepage-icons/pre-need.png" class="icons-carousel text-center"
+                                    alt=""><br>
+                                <a href="" class="btn gsBold text-white mt-3 mb-2 text-center"
+                                    style="background-color: #124735 ;">Pre-need Plans</a>
+                                <br>
                             </div>
                         </div>
                     </div>
@@ -419,12 +420,189 @@
         </div>
     </div>
     <!--end of icon carousel-lg -->
+    <!-- start of icon carousel-SM -->
+    <div class="icon-carousel-section pb-3 d-md-none">
+        <div>
+            <br>
+            <br>
+            <h3 class="gsBold text-rampver text-center">WHAT WE OFFER</h1>
+                <br>
+                <p class="gsBold text-gold text-center mx-4">Rampver is a complete one stop shop for the
+                    best financial products & services in the Philippines.</p>
+        </div>
+        <div id="carouselExampleIndicatorsSM" class="carousel slide" data-ride="carouselSM">
+            <ol class="carousel-indicators">
+                <li data-target="#carouselExampleIndicatorsSM" data-slide-to="0" class="active indicator"></li>
+                <li data-target="#carouselExampleIndicatorsSM" data-slide-to="1" class="indicator"></li>
+                <li data-target="#carouselExampleIndicatorsSM" data-slide-to="2" class="indicator"></li>
+                <li data-target="#carouselExampleIndicatorsSM" data-slide-to="3" class="indicator"></li>
+            </ol>
+            <div class="carousel-inner">
+                <!-- Healthcare -->
+                <div class="carousel-item active" data-interval="3500">
+                    <div class="text-center">
+                        <h1 class="pt-3 pb-3 mb-2">
+                            <a href="" class="btn bg-rampver text-white gsBold">INVESTMENTS</a>
+                        </h1>
+                        <br>
+                    </div>
+                    <div class="row">
+                        <div class="col mb-2 text-center">
+                            <div>
+                                <img src="./img/homepage-icons/mutual-fund.png" class="icons-carousel text-center"
+                                    alt="mutual funds"><br>
+                                <a href="https://invest.rampver.com/"
+                                    class="btn btn-sm gsBold text-white mt-3 text-center"
+                                    style="background-color: #124735 ;">Mutual Funds</a>
+                                <br>
+                            </div>
+                        </div>
+                        <div class="col mb-2 text-center">
+                            <div>
+                                <img src="./img/homepage-icons/stock-trading.png" class="icons-carousel text-center"
+                                    alt=""><br>
+                                <a href="" class="btn btn-sm gsBold text-white mt-3 text-center"
+                                    style="background-color: #124735 ;">Stock Trading</a>
+                                <br>
+                            </div>
+                        </div>
+                        <div class="col mb-2 text-center">
+                            <div>
+                                <img src="./img/homepage-icons/fixed-income.png" class="icons-carousel text-center"
+                                    alt=""><br>
+                                <a href="" class="btn btn-sm gsBold text-white mt-3 text-center"
+                                    style="background-color: #124735 ;">Fixed Income</a>
+                                <br>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Healthcare -->
+
+                <!-- Healthcare -->
+                <div class="carousel-item" data-interval="3500">
+                    <div class="text-center">
+                        <h1 class="pt-3 pb-3 mb-2">
+                            <a href="" class="btn bg-rampver text-white gsBold">HEALTHCARE</a>
+                        </h1>
+                        <br>
+                    </div>
+                    <div class="row">
+                        <div class="col mb-2 text-center">
+                            <div>
+                                <img src="./img/homepage-icons/hmo.png" class="icons-carousel text-center"
+                                    alt="mutual funds"><br>
+                                <a href="" class="btn btn-sm gsBold text-white mt-3 text-center"
+                                    style="background-color: #124735;">HMO Plans</a>
+                                <br>
+                            </div>
+                        </div>
+                        <div class="col mb-2 text-center">
+                            <div>
+                                <img src="./img/homepage-icons/medical-insurance.png" class="icons-carousel text-center"
+                                    alt="mutual funds"><br>
+                                <a href="" class="btn btn-sm gsBold text-white mt-3 text-center"
+                                    style="background-color: #124735 ;">Medical Insurance</a>
+                                <br>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Healthcare -->
+
+                <!-- Protection -->
+                <div class="carousel-item" data-interval="3500">
+                    <div class="text-center">
+                        <h1 class="pt-3 pb-3 mb-2">
+                            <a href="" class="btn bg-rampver text-white gsBold">PROTECTION</a>
+                        </h1>
+                        <br>
+                    </div>
+                    <div class="row">
+                        <div class="col mb-2 text-center">
+                            <div>
+                                <img src="./img/homepage-icons/life-insurance.png" class="icons-carousel text-center"
+                                    alt="mutual funds"><br>
+                                <a href="" class="btn btn-sm gsBold text-white mt-3 text-center"
+                                    style="background-color: #124735;">Life Insurance</a>
+                                <br>
+                            </div>
+                        </div>
+                        <div class="col mb-2 text-center">
+                            <div>
+                                <img src="./img/homepage-icons/non-life.png" class="icons-carousel text-center"
+                                    alt="mutual funds"><br>
+                                <a href="" class="btn btn-sm gsBold text-white mt-3 text-center"
+                                    style="background-color: #124735 ;">Non-life Insurance</a>
+                            </div>
+                        </div>
+                        <div class="col mb-2 text-center">
+                            <div>
+                                <img src="./img/homepage-icons/pre-need.png" class="icons-carousel text-center"
+                                    alt="mutual funds"><br>
+                                <a href="" class="btn btn-sm gsBold text-white mt-3 text-center"
+                                    style="background-color: #124735 ;">Pre-need Plans</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Protection -->
+
+                <!-- CORPSOL -->
+                <div class="carousel-item" data-interval="3500">
+                    <div class="text-center">
+                        <h1 class="pt-3 pb-3 mb-2">
+                            <a href="" class="btn bg-rampver text-white gsBold">CORPORATE
+                                SOLUTIONS</a>
+                        </h1>
+                        <br>
+                    </div>
+                    <div class="row">
+                        <div class="col mb-2 text-center">
+                            <div>
+                                <img src="./img/homepage-icons/business-solutions.png"
+                                    class="icons-carousel text-center" alt="mutual funds"><br>
+                                <a href="" class="btn btn-sm gsBold text-white mt-3 text-center"
+                                    style="background-color: #124735;">Business Solutions</a>
+                                <br>
+                            </div>
+                        </div>
+                        <div class="col mb-2 text-center">
+                            <div>
+                                <img src="./img/homepage-icons/employee.png" class="icons-carousel text-center"
+                                    alt="mutual funds"><br>
+                                <a href="" class="btn btn-sm gsBold text-white mt-3 text-center"
+                                    style="background-color: #124735 ;">Employee Solutions</a>
+                                <br>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- CORPSOL -->
+
+            </div>
+            <br>
+            <br>
+            <a class="carousel-control-prev" style="visibility: hidden ;" href="#carouselExampleIndicatorsSM"
+                role="button" data-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="sr-only">Previous</span>
+            </a>
+            <a class="carousel-control-next" style="visibility: hidden ;" href="#carouselExampleIndicatorsSM"
+                role="button" data-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="sr-only">Next</span>
+            </a>
+        </div>
+    </div>
+    <!--end of icon carousel-SM -->
 
 
     <!-- start of why rampver section -->
     <div class="intro">
         <br>
-        <h3 class="text-white gsBold">WHY RAMPVER</h1>
+        <h3 class="text-white gsBold d-none d-md-block">WHY RAMPVER</h1>
+        <h3 class="text-white gsBold text-center d-md-none">WHY RAMPVER</h1>
             <br>
             <div class="row why-rampver">
                 <div class="col-lg-4 col-md-4 col-sm-6 col-xs-6 mt-2">
@@ -486,7 +664,7 @@
     <!-- end of why rampver section -->
 
     <!-- start of LARGE icon carousel -->
-    <div class="logo-carousel-section large-logo-section d-none d-sm-block">
+    <div class="logo-carousel-section large-logo-section d-none d-md-block">
         <div>
             <br>
             <br>
@@ -717,214 +895,134 @@
         <br>
     </div>
     <!--end of LARGE icon carousel -->
-    <!-- start of icon carousel-SM -->
-    <div class="icon-carousel-section pb-3 d-md-none">
+
+    <!-- start of SMALL icon carousel -->
+    <div class="logo-carousel-section d-md-none">
         <div>
             <br>
             <br>
-            <h3 class="gsBold text-rampver text-center">WHAT WE OFFER</h1>
-                <br>
-                <p class="gsBold text-gold text-center mx-4">Rampver is a complete one stop shop for the
-                    best financial products & services in the Philippines.</p>
+            <h3 class="gsBold text-rampver text-center">OUR PARTNERS</h3>
+            <br>
         </div>
-        <div id="carouselExampleIndicatorsSM" class="carousel slide" data-ride="carouselSM">
+        <div id="logoIndicatorsSM" class="carousel slide" data-ride="carousel">
             <ol class="carousel-indicators">
-                <li data-target="#carouselExampleIndicatorsSM" data-slide-to="0" class="active indicator"></li>
-                <li data-target="#carouselExampleIndicatorsSM" data-slide-to="1" class="indicator"></li>
-                <li data-target="#carouselExampleIndicatorsSM" data-slide-to="2" class="indicator"></li>
-                <li data-target="#carouselExampleIndicatorsSM" data-slide-to="3" class="indicator"></li>
+                <li data-target="#logoIndicatorsSM" data-slide-to="0" class="active indicator"></li>
+                <li data-target="#logoIndicatorsSM" data-slide-to="1" class="indicator"></li>
+                <li data-target="#logoIndicatorsSM" data-slide-to="2" class="indicator"></li>
+                <li data-target="#logoIndicatorsSM" data-slide-to="3" class="indicator"></li>
+                <li data-target="#logoIndicatorsSM" data-slide-to="4" class="indicator"></li>
+                <li data-target="#logoIndicatorsSM" data-slide-to="5" class="indicator"></li>
+                <li data-target="#logoIndicatorsSM" data-slide-to="6" class="indicator"></li>
             </ol>
             <div class="carousel-inner">
-                <!-- Healthcare -->
-                <div class="carousel-item active" data-interval="3500">
+                <!-- mutual funds -->
+                <div class="carousel-item active pb-1 mb-2">
                     <div class="text-center">
-                        <h1 class="pt-3 pb-3 mb-2">
-                            <a href="" class="btn bg-rampver text-white gsBold">INVESTMENTS</a>
+                        <h1 class="pt-3 mb-2">
+                            <a href="" class="btn btn-lg bg-rampver text-white gsBold">Mutual
+                                Funds</a>
                         </h1>
-                        <br>
                     </div>
-                    <div class="row">
-                        <div class="col mb-2 text-center">
-                            <div>
-                                <img src="./img/homepage-icons/mutual-fund.png" class="icons-carousel text-center"
-                                    alt="mutual funds"><br>
-                                <a href="https://invest.rampver.com/"
-                                    class="btn btn-sm gsBold text-white mt-3 text-center"
-                                    style="background-color: #124735 ;">Mutual Funds</a>
-                                <br>
-                            </div>
-                        </div>
-                        <div class="col mb-2 text-center">
-                            <div>
-                                <img src="./img/homepage-icons/stock-trading.png" class="icons-carousel text-center"
-                                    alt=""><br>
-                                <a href="" class="btn btn-sm gsBold text-white mt-3 text-center"
-                                    style="background-color: #124735 ;">Stock Trading</a>
-                                <br>
-                            </div>
-                        </div>
-                        <div class="col mb-2 text-center">
-                            <div>
-                                <img src="./img/homepage-icons/fixed-income.png" class="icons-carousel text-center"
-                                    alt=""><br>
-                                <a href="" class="btn btn-sm gsBold text-white mt-3 text-center"
-                                    style="background-color: #124735 ;">Fixed Income</a>
-                                <br>
-                            </div>
-                        </div>
+                    <div class="px-3 text-center">
+                        <img src="./img/logo-static/mutual-funds.png" class="img-fluid logo-static" alt="">
                     </div>
                 </div>
-                <!-- Healthcare -->
-
-                <!-- Healthcare -->
-                <div class="carousel-item" data-interval="3500">
+                <!-- mutual funds -->
+                <!-- healthcare -->
+                <div class="carousel-item pb-1 mb-2">
                     <div class="text-center">
-                        <h1 class="pt-3 pb-3 mb-2">
-                            <a href="" class="btn bg-rampver text-white gsBold">HEALTHCARE</a>
+                        <h1 class="pt-3 mb-2">
+                            <a href="" class="btn btn-lg bg-rampver text-white gsBold">Healthcare</a>
                         </h1>
-                        <br>
                     </div>
-                    <div class="row">
-                        <div class="col mb-2 text-center">
-                            <div>
-                                <img src="./img/homepage-icons/hmo.png" class="icons-carousel text-center"
-                                    alt="mutual funds"><br>
-                                <a href="" class="btn btn-sm gsBold text-white mt-3 text-center"
-                                    style="background-color: #124735;">HMO Plans</a>
-                                <br>
-                            </div>
-                        </div>
-                        <div class="col mb-2 text-center">
-                            <div>
-                                <img src="./img/homepage-icons/medical-insurance.png" class="icons-carousel text-center"
-                                    alt="mutual funds"><br>
-                                <a href="" class="btn btn-sm gsBold text-white mt-3 text-center"
-                                    style="background-color: #124735 ;">Medical Insurance</a>
-                                <br>
-                            </div>
-                        </div>
+                    <div class="px-3 text-center">
+                        <img src="./img/logo-static/healthcare.png" class="img-fluid logo-static" alt="">
                     </div>
                 </div>
-                <!-- Healthcare -->
-
-                <!-- Protection -->
-                <div class="carousel-item" data-interval="3500">
+                <!-- healthcare -->
+                <!-- life insurance -->
+                <div class="carousel-item pb-1 mb-2">
                     <div class="text-center">
-                        <h1 class="pt-3 pb-3 mb-2">
-                            <a href="" class="btn bg-rampver text-white gsBold">PROTECTION</a>
+                        <h1 class="pt-3 mb-2">
+                            <a href="" class="btn btn-lg bg-rampver text-white gsBold">Life Insurance</a>
                         </h1>
-                        <br>
                     </div>
-                    <div class="row">
-                        <div class="col mb-2 text-center">
-                            <div>
-                                <img src="./img/homepage-icons/life-insurance.png" class="icons-carousel text-center"
-                                    alt="mutual funds"><br>
-                                <a href="" class="btn btn-sm gsBold text-white mt-3 text-center"
-                                    style="background-color: #124735;">Life Insurance</a>
-                                <br>
-                            </div>
-                        </div>
-                        <div class="col mb-2 text-center">
-                            <div>
-                                <img src="./img/homepage-icons/non-life.png" class="icons-carousel text-center"
-                                    alt="mutual funds"><br>
-                                <a href="" class="btn btn-sm gsBold text-white mt-3 text-center"
-                                    style="background-color: #124735 ;">Non-life Insurance</a>
-                                <!-- <div class="text-center d-none d-lg-block">
-                                <p class="text-rampver mb-0">
-                                    <a href="" class="text-rampver gsBold">Motor Car</a> |
-                                    <a href="" class="text-rampver gsBold">OFW Insurance</a> |
-                                    <a href="" class="text-rampver gsBold">Fire</a></p>
-                                <p class="text-rampver mt-0">
-                                    <a href="" class="text-rampver gsBold">Travel</a> |
-                                    <a href="" class="text-rampver gsBold">Personal Accident</a></p>
-                            </div> -->
-                            </div>
-                        </div>
+                    <div class="px-3 text-center">
+                        <img src="./img/logo-static/life-insurance.png" class="img-fluid logo-static" alt="">
                     </div>
                 </div>
-                <!-- Protection -->
-
-                <!-- CORPSOL -->
-                <div class="carousel-item" data-interval="3500">
+                <!-- life insurance -->
+                <!-- non life insurance -->
+                <div class="carousel-item pb-1 mb-2">
                     <div class="text-center">
-                        <h1 class="pt-3 pb-3 mb-2">
-                            <a href="" class="btn bg-rampver text-white gsBold">CORPORATE
-                                SOLUTIONS</a>
+                        <h1 class="pt-3 mb-2">
+                            <a href="" class="btn btn-lg bg-rampver text-white gsBold">Non-life Insurance</a>
                         </h1>
-                        <br>
                     </div>
-                    <div class="row">
-                        <div class="col mb-2 text-center">
-                            <div>
-                                <img src="./img/homepage-icons/business-solutions.png"
-                                    class="icons-carousel text-center" alt="mutual funds"><br>
-                                <a href="" class="btn btn-sm gsBold text-white mt-3 text-center"
-                                    style="background-color: #124735;">Business Solutions</a>
-                                <br>
-                                <!-- <div class="text-center d-none d-lg-block">
-                                <p class="text-rampver mb-0">
-                                    <a href="" class="text-rampver gsBold">Investments Management Accounts</a> |
-                                    <a href="" class="text-rampver gsBold">Business Insurance</a>
-                                </p>
-                                <p class="text-rampver mt-0 mb-0">
-                                    <a href="" class="text-rampver gsBold">Credit Life Insurance</a> |
-                                    <a href="" class="text-rampver gsBold">Commercial Auto Insurance</a>
-                                </p>
-                                <p class="text-rampver mt-0">
-                                    <a href="" class="text-rampver gsBold">Group Retirement Plans</a> |
-                                    <a href="" class="text-rampver gsBold">Business Loans</a>
-                                </p>
-                            </div> -->
-                            </div>
-                        </div>
-                        <div class="col mb-2 text-center">
-                            <div>
-                                <img src="./img/homepage-icons/employee.png" class="icons-carousel text-center"
-                                    alt="mutual funds"><br>
-                                <a href="" class="btn btn-sm gsBold text-white mt-3 text-center"
-                                    style="background-color: #124735 ;">Employee Solutions</a>
-                                <br>
-                                <!-- <div class="text-center d-none d-lg-block">
-                                <p class="text-rampver mb-0">
-                                    <a href="" class="text-rampver gsBold">Micro-Investment Programs</a> |
-                                    <a href="" class="text-rampver gsBold">Group Personal Accident</a>
-                                </p>
-                                <p class="text-rampver mt-0 mb-0">
-                                    <a href="" class="text-rampver gsBold">Group Life Insurance</a> |
-                                    <a href="" class="text-rampver gsBold">Group HMO Plans</a>
-                                </p>
-                                <p class="text-rampver mt-0">
-                                    <a href="" class="text-rampver gsBold">Financial Literacy Programs</a>
-                                </p>
-                            </div> -->
-                            </div>
-                        </div>
+                    <div class="px-3 text-center">
+                        <img src="./img/logo-static/non-life.png" class="img-fluid logo-static" alt="">
                     </div>
                 </div>
-                <!-- CORPSOL -->
-
+                <!-- nonlife insurance -->
+                <!-- stock trading -->
+                <div class="carousel-item pb-1 mb-2">
+                    <div class="text-center">
+                        <h1 class="pt-3 mb-2">
+                            <a href="" class="btn btn-lg bg-rampver text-white gsBold">Stock Trading</a>
+                        </h1>
+                    </div>
+                    <div class="px-3 text-center">
+                        <img src="./img/logo-static/stock-trading.png" class="img-fluid logo-static" alt="">
+                    </div>
+                </div>
+                <!-- stock trading -->
+                <!-- preneed -->
+                <div class="carousel-item pb-1 mb-2">
+                    <div class="text-center">
+                        <h1 class="pt-3 mb-2">
+                            <a href="" class="btn btn-lg bg-rampver text-white gsBold">Pre-need Plans</a>
+                        </h1>
+                    </div>
+                    <div class="px-3 text-center">
+                        <img src="./img/logo-static/pre-need.png" class="img-fluid logo-static" alt="">
+                    </div>
+                </div>
+                <!-- preneed -->
+                <!-- business loans -->
+                <div class="carousel-item pb-1 mb-2">
+                    <div class="text-center">
+                        <h1 class="pt-3 mb-2">
+                            <a href="" class="btn btn-lg bg-rampver text-white gsBold">Business Loans</a>
+                        </h1>
+                    </div>
+                    <div class="px-3 text-center">
+                        <img src="./img/logo-static/business-loans.png" class="img-fluid logo-static" alt="">
+                    </div>
+                </div>
+                <!-- business loans -->
             </div>
-            <br>
-            <br>
-            <a class="carousel-control-prev" style="visibility: hidden;" href="#carouselExampleIndicatorsSM" role="button" data-slide="prev">
+            <a class="carousel-control-prev" style="visibility: hidden;" href="#logoIndicatorsSM" role="button"
+                data-slide="prev">
                 <span class="carousel-control-prev-icon" aria-hidden="true"></span>
                 <span class="sr-only">Previous</span>
             </a>
-            <a class="carousel-control-next" style="visibility: hidden;" href="#carouselExampleIndicatorsSM" role="button" data-slide="next">
+            <a class="carousel-control-next" style="visibility: hidden;" href="#logoIndicatorsSM" role="button"
+                data-slide="next">
                 <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                <span class="sr-only">Next</span>
+                <span class="sr-only" style="background-color: #124735 ;">Next</span>
             </a>
         </div>
+        <br>
     </div>
-    <!--end of icon carousel-SM -->
+    <!--end of SMALL icon carousel -->
 
     <!-- start of investment tools section -->
     <div class="intro">
-        <h4 class="text-white gsBold">INVESTMENT TOOLS</h4>
+        <h4 class="text-white gsBold d-none d-md-block">INVESTMENT TOOLS</h4>
+        <h4 class="text-white gsBold text-center d-md-none">INVESTMENT TOOLS</h4>
         <br>
-        <h4 class="gsBold text-gold text-center">Try these tools that can supplement your investment journey.</h5>
+        <h4 class="gsBold text-gold text-center d-none d-md-block">Try these tools that can supplement your investment journey.</h5>
+        <h5 class="gsBold text-gold text-center d-md-none">Try these tools that can supplement your investment journey.</h5>
             <br>
             <br>
             <div class="row">
@@ -969,16 +1067,17 @@
                 </div>
             </div>
             <br>
-            <br>
-            <br>
     </div>
     <!-- end of investment tools section -->
 
     <!-- start of learning center section -->
     <div class="learning-tools" id="learning-center">
-        <h4 class="text-white gsBold">LEARNING CENTER</h4>
         <br>
-        <h4 class="gsBold text-gold text-center">Be part of our community and learn financial education through our
+        <h4 class="text-white gsBold d-none d-md-block">LEARNING CENTER</h4>
+        <h4 class="text-white gsBold text-center d-md-none">LEARNING CENTER</h4>
+        <br>
+        <h4 class="gsBold text-gold text-center d-none d-md-block">Be part of our community and learn financial education through our
+        <h5 class="gsBold text-gold text-center d-md-none">Be part of our community and learn financial education through our
             socials!</h5>
             <br>
             <br>
@@ -1060,7 +1159,9 @@
     <div>
         <div>
             <br>
-            <h5 class="gsBold text-rampver pt-4 ml-2 pl-4">Here's what our clients say about us!</h3>
+            <br>
+            <h5 class="gsBold text-rampver pt-4 ml-2 pl-4 d-none d-md-block">Here's what our clients say about us!</h3>
+            <h5 class="gsBold text-rampver text-center d-md-mone">Here's what our clients say about us!</h3>
         </div>
         <br>
         <div class="row testimonial-area mx-4">
@@ -1289,13 +1390,22 @@
                 <div class="col-lg-6 col-md-6 col-sm-6 col-xs-6">
                     <h5 class="font-italic gsBold text-rampver text-center mb-0">We help people fulfill financial
                         dreams.</h5>
+                        <br>
                     <p class="text-rampver text-center">Ⓒ Rampver Financials 2022 | All Rights Reserved</p>
                     <br>
                 </div>
                 <div class="col-lg-6 col-md-6 col-sm-6 col-xs-6 footer-text">
-                    <h5 class="gsBold text-rampver text-center mb-0">
+                    <h5 class="gsBold text-rampver text-center mb-0 d-none d-md-block">
                         <a href="https://rampver.com/terms-and-conditions/" target="_blank" class="text-rampver">Terms
                             and Conditions</a> |
+                        <a href="https://rampver.com/privacy" target="_blank" class="text-rampver">Data Privacy
+                            Policy</a>
+                    </h5>
+                    <h5 class="gsBold text-rampver text-center mb-0 d-md-none mb-2">
+                        <a href="https://rampver.com/terms-and-conditions/" target="_blank" class="text-rampver">Terms
+                            and Conditions</a> 
+                    </h5>
+                    <h5 class="gsBold text-rampver text-center mb-0 d-md-none mb-2">
                         <a href="https://rampver.com/privacy" target="_blank" class="text-rampver">Data Privacy
                             Policy</a>
                     </h5>
@@ -1309,15 +1419,19 @@
             </div>
             <br><br>
             <h5 class="text-rampver gsBold text-center mt-2 mb-2 mx-2">Rampver Financials is registered with:</h2>
-                <div class="reg-logos row mx-2">
-                    <div class="col-lg-6 col-md-6 col-sm-6 col-xs-6 text-center">
-                        <img src="./img/regulator/sec.png" class="reg-logos-icon" alt="">
-                    </div>
-                    <div class="col-lg-6 col-md-6 col-sm-6 col-xs-6 text-center">
-                        <img src="./img/regulator/ic.png" class="reg-logos-icon" alt="">
+                <div class="reg-logos row mx-2 d-none d-md-block">
+                    <div class="row">
+                        <div class="col-lg-6 col-md-6 col-sm-6 col-xs-6 text-center">
+                            <img src="./img/regulator/sec.png" class="reg-logos-icon" alt="">
+                        </div>
+                        <div class="col-lg-6 col-md-6 col-sm-6 col-xs-6 text-center">
+                            <img src="./img/regulator/ic.png" class="reg-logos-icon" alt="">
+                        </div>
                     </div>
                 </div>
-
+                <div class="text-center d-md-none">
+                    <img src="./img/logo-static/reg-small.png" class="img-fluid" alt="">
+                </div>
         </div>
         <br>
         <!-- end footer -->
@@ -1326,12 +1440,10 @@
             <br>
         </div>
 
-        <script src="//instant.page/1.1.0" type="module"
-            integrity="sha384-EwBObn5QAxP8f09iemwAJljc+sU+eUXeL9vSBw1eNmVarwhKk2F9vBEpaN9rsrtp">
-        </script>
-
         <!-- Optional JavaScript -->
         <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+        <script src="//instant.page/5.1.1" type="module"
+            integrity="sha384-MWfCL6g1OTGsbSwfuMHc8+8J2u71/LA8dzlIN3ycajckxuZZmF+DNjdm7O6H3PSq"></script>
         <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
             integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous">
         </script>
@@ -1340,6 +1452,14 @@
         </script>
         <script src="https://cdn.jsdelivr.net/npm/popper.js@1.14.7/dist/umd/popper.min.js"
             integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous">
+        </script>
+
+        <script>
+            $(document).ready(function () {
+                $('.carousel').carousel({
+                    interval: 5000
+                })
+            });
         </script>
 
 </body>
