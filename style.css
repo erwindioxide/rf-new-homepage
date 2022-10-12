@@ -70,6 +70,10 @@ body {
     margin-bottom: 0;
 }
 
+.bannerBtn {
+    background: linear-gradient(to right, #124735, #256141);
+}
+
 .btn-big-lg {
     font-size: 175%;
     padding-top: 10;
@@ -138,18 +142,18 @@ body {
     background: linear-gradient(to right, #124735, #256141);
     padding-top: 3rem;
     /* padding-bottom: 1rem; */
-    padding-right: 2rem;
-    padding-left: 2rem;
+    padding-right: 1rem;
+    padding-left: 1rem;
     margin-left: 0px;
     width: 100% !important;
 }
 
-.learning-tools {
+.learning-tools, .learning-tools-sm {
     background: linear-gradient(to right, #124735, #256141);
-    padding-bottom: 2rem;
-    padding-right: 2rem;
+    padding-bottom: 1rem;
+    padding-right: 1rem;
     padding-top: 1rem;
-    padding-left: 3rem;
+    padding-left: 1rem;
     margin-left: 0px;
     width: 100% !important;
 }
@@ -174,6 +178,10 @@ body {
 
 .learning-tools-icons {
     width: 80px;
+}
+
+.socmed-small {
+    width: 55px;
 }
 
 
@@ -238,7 +246,7 @@ body {
 }
 
 .bottombar {
-    background-color: #124735;
+    background: linear-gradient(to right, #124735, #256141);
 }
 
 /* .footer-text{
